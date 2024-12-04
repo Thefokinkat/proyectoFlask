@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Tareas</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='css/styles.css')}}">
+</head>
+<body>
+    <div class="container">
+        <h1>Gestión de Tareas</h1>
+        <div class="flash-messages">
+            {% with messages = get_flashed_messages(with_categories=true) %}
+                {% if messages %}
+                    {% for category, message in messages %}
+                        <div class="flash-message flash-{{ category }}">
+                            {{ message }}
+                        </div>
+                    {% endfor %}
+                {% endif %}
+            {% endwith %}
+        </div>
+        <!-- Lista de Tareas Pendientes -->
+        <ul class="task-list">
+            {% for task in tasks %}
+                <li class="task-item">
+                    <div class="task-info">
+                        <h3>{{ task.title }}</h3>
+                        <p>{{ task.description }}</p>
+                    </div>
+                    <form action="{{ url_for('complete_task', id=task.id) }}" method="post" class="task-actions">
+                        <button type="submit" class="complete-btn">Completar</button>
+                    </form>
+                </li>
+            {% endfor %}
+        </ul>
+
+        <!-- Formulario para Agregar Tareas -->
+        <div class="form-container">
+            <h2>Agregar Nueva Tarea</h2>
+            <form action="{{ url_for('create_task') }}" method="post">
+                <div class="input-container">
+                    <label for="title">Título:</label>
+                    <input type="text" id="title" name="title" placeholder="Nombre de la tarea" required>
+                </div>
+                <div class="input-container">
+                    <label for="description">Descripción:</label>
+                    <textarea id="description" name="description" placeholder="Descripción de la tarea (Opcional)" ></textarea>
+                </div>
+                <button type="submit" class="add-task-btn">Agregar Tarea</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
