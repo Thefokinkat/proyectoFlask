@@ -1,0 +1,83 @@
+/* Estilos para el encabezado */
+header {
+    background-color: #e7c03d; /* Cambia el color de fondo del encabezado a un tono de azul */
+    color: #ffffff; /* Cambia el color del texto a blanco */
+    text-align: center; /* Centra el texto horizontalmente en el encabezado */
+    padding: 20px; /* Agrega espacio interior alrededor del encabezado */
+}
+
+/* Estilos para el título del encabezado */
+header h1 {
+    font-size: 36px; /* Cambia el tamaño de la fuente del título a 36 píxeles */
+    margin: 0; /* Elimina el margen predeterminado alrededor del título */
+}
+
+/* Estilos para el párrafo del encabezado */
+header p {
+    font-size: 18px; /* Cambia el tamaño de la fuente del párrafo a 18 píxeles */
+    margin-top: 10px; /* Agrega espacio superior al párrafo para separarlo del título */
+}
+
+/* Estilos para la barra de navegación */
+nav {
+    background-color: #f0d55d; /* Cambia el color de fondo de la barra de navegación a un tono oscuro */
+    color: #000000; /* Cambia el color del texto a blanco */
+}
+
+/* Estilos para la lista de navegación */
+nav ul {
+    list-style-type: none; /* Elimina los marcadores de lista de los elementos de navegación */
+    margin: 0; /* Elimina el margen predeterminado alrededor de la lista de navegación */
+    padding: 0; /* Elimina el relleno predeterminado dentro de la lista de navegación */
+}
+
+/* Estilos para los elementos de navegación */
+nav ul li {
+    display: inline; /* Hace que los elementos de navegación se muestren en línea (uno al lado del otro) */
+    margin-right: 20px; /* Agrega espacio derecho entre los elementos de navegación */
+}
+
+/* Estilos para los enlaces de navegación */
+nav ul li a {
+    text-decoration: none; /* Elimina la decoración de subrayado de los enlaces */
+    color: #fff; /* Cambia el color del texto de los enlaces a blanco */
+    font-weight: bold; /* Hace que el texto de los enlaces sea negrita */
+}
+
+/* Estilos para el contenido principal */
+main {
+    margin: 20px; /* Agrega espacio alrededor del contenido principal */
+}
+
+/* Estilos para las secciones */
+section {
+    margin-bottom: 30px; /* Agrega espacio inferior entre las secciones */
+}
+
+/* Estilos para los títulos de sección */
+section h2 {
+    font-size: 24px; /* Cambia el tamaño de la fuente de los títulos de sección a 24 píxeles */
+    color: #333; /* Cambia el color del texto de los títulos de sección a un tono oscuro */
+}
+
+/* Estilos para la lista de servicios */
+ul {
+    list-style-type: disc; /* Cambia el estilo de viñetas de la lista a puntos */
+    margin-left: 20px; /* Agrega espacio izquierdo entre la lista y el borde de la página */
+}
+
+/* Estilos para la imagen destacada */
+aside img {
+    max-width: 100%; /* Asegura que la imagen no sea más ancha que su contenedor */
+    height: auto; /* Mantiene la proporción de aspecto de la imagen */
+    display: block; /* Hace que la imagen sea un elemento de bloque */
+    margin: 20px auto; /* Centra la imagen horizontalmente y agrega espacio vertical alrededor de ella */
+}
+
+/* Estilos para el pie de página */
+footer {
+    background-color: #998133; /* Cambia el color de fondo del pie de página a un tono de azul */
+    color: #fff; /* Cambia el color del texto a blanco */
+    text-align: center; /* Centra el texto horizontalmente en el pie de página */
+    padding: 10px; /* Agrega espacio interior alrededor del pie de página */
+}
